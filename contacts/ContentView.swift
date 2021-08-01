@@ -16,8 +16,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List (contacts) {
-                Text($0.name)
+            List (contacts) { contact in
+                VStack(alignment: .leading){
+                    Text(contact.name)
+                        .font(.headline)
+                    Text(contact.job)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
             }
             .navigationTitle("Contacts")
         }

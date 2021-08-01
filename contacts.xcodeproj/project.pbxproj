@@ -13,6 +13,7 @@
 		A6F6806126B678AC004ABFFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F6806026B678AC004ABFFB /* Preview Assets.xcassets */; };
 		A6F6806C26B678AC004ABFFB /* contactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6806B26B678AC004ABFFB /* contactsTests.swift */; };
 		A6F6807726B678AC004ABFFB /* contactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6807626B678AC004ABFFB /* contactsUITests.swift */; };
+		A6F6808526B685BC004ABFFB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6808426B685BB004ABFFB /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		A6F6807226B678AC004ABFFB /* contactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F6807626B678AC004ABFFB /* contactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsUITests.swift; sourceTree = "<group>"; };
 		A6F6807826B678AC004ABFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F6808426B685BB004ABFFB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		A6F6804D26B678A8004ABFFB = {
 			isa = PBXGroup;
 			children = (
+				A6F6808426B685BB004ABFFB /* Contact.swift */,
 				A6F6805826B678A8004ABFFB /* contacts */,
 				A6F6806A26B678AC004ABFFB /* contactsTests */,
 				A6F6807526B678AC004ABFFB /* contactsUITests */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F6808526B685BC004ABFFB /* Contact.swift in Sources */,
 				A6F6805C26B678A8004ABFFB /* ContentView.swift in Sources */,
 				A6F6805A26B678A8004ABFFB /* contactsApp.swift in Sources */,
 			);

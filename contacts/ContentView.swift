@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    var contacts = [
+        Contact(name: "zuck", job: "god"),
+        Contact(name: "elon", job: "idk"),
+        Contact(name: "putin", job: "russian")
+    ]
+    
     var body: some View {
         NavigationView {
-            List {
-                Text("Zuck")
-                Text("Elon")
-                Text("Putin")
+            List (contacts) {
+                Text($0.name)
             }
             .navigationTitle("Contacts")
         }

@@ -8,23 +8,30 @@
 import SwiftUI
 
 struct ContactDetailView: View {
-    var contact: Contact
+    
+    @State var contact: Contact
+
     var body: some View {
         VStack {
             Image(contact.name)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 175, height: 175)
+                .frame(width: 125, height: 125)
                 .mask(Circle())
-                .padding(.top, 30)
+                .padding(.top, 5)
             Text(contact.name)
                 .font(.largeTitle)
+                .fontWeight(.medium)
                 
             Text(contact.job)
                 .font(.title3)
-                .fontWeight(.medium)
+                .fontWeight(.regular)
                 .foregroundColor(.gray)
-                .padding(5)
+            VStack (alignment: .leading){
+                Text("Rating")
+                Slider(value: $contact.rating, in: 0...5, step: 1)
+            }
+                .padding(30)
             Spacer()
         }
     }

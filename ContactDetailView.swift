@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactDetailView: View {
     
-    @State var contact: Contact
+    @Binding var contact: Contact
 
     var body: some View {
         VStack {
@@ -28,7 +28,7 @@ struct ContactDetailView: View {
                 .foregroundColor(.gray)
                 .padding(.bottom)
             VStack (alignment: .leading){
-                Text(contact.phone)
+                Text("phone: " + contact.phone)
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                     .padding(.bottom)
@@ -43,6 +43,6 @@ struct ContactDetailView: View {
 
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView(contact: Contact(name: "holy zuck", job: "god", phone: "phone: +1 (000) 000-0000"))
+        ContactDetailView(contact: .constant(Contact(name: "holy zuck", job: "god", phone: "+1 (000) 000-0000")))
     }
 }

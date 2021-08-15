@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var contacts = [
+    @State var contacts = [
         Contact(name: "holy zuck", job: "god", phone: "+1 (000) 000-0000"),
         Contact(name: "elon musk", job: "idk", phone: "+1 (000) 000-0000"),
         Contact(name: "vladmir putin", job: "russian", phone: "+1 (000) 000-0000"),
@@ -19,7 +19,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List (contacts) { contact in
-                NavigationLink (destination: ContactDetailView(contact: contact)) {
+                let index = contacts.firstIndex {
+                    $0.name == contact.name
+                }!
+                NavigationLink (destination: ContactDetailView(contact: $contacts[index])) {
                     VStack(alignment: .leading){
                         Text(contact.name)
                             .font(.headline)

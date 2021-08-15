@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     var contacts = [
-        Contact(name: "holy zuck", job: "god"),
-        Contact(name: "elon musk", job: "idk"),
-        Contact(name: "vladmir putin", job: "russian"),
-        Contact(name: "ed sheeran", job: "girl you know i want ur love")
+        Contact(name: "holy zuck", job: "god", phone: "+1 (000) 000-0000"),
+        Contact(name: "elon musk", job: "idk", phone: "+1 (000) 000-0000"),
+        Contact(name: "vladmir putin", job: "russian", phone: "+1 (000) 000-0000"),
+        Contact(name: "ed sheeran", job: "girl you know i want ur love", phone: "+1 (000) 000-0000")
     ]
     
     var body: some View {

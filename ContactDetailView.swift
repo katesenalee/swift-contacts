@@ -22,12 +22,16 @@ struct ContactDetailView: View {
             Text(contact.name)
                 .font(.largeTitle)
                 .fontWeight(.medium)
-                
             Text(contact.job)
                 .font(.title3)
                 .fontWeight(.regular)
                 .foregroundColor(.gray)
+                .padding(.bottom)
             VStack (alignment: .leading){
+                Text(contact.phone)
+                    .fontWeight(.regular)
+                    .foregroundColor(.black)
+                    .padding(.bottom)
                 Text("Rating")
                 Slider(value: $contact.rating, in: 0...5, step: 1)
             }
@@ -39,6 +43,6 @@ struct ContactDetailView: View {
 
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView(contact: Contact(name: "holy zuck", job: "god"))
+        ContactDetailView(contact: Contact(name: "holy zuck", job: "god", phone: "phone: +1 (000) 000-0000"))
     }
 }

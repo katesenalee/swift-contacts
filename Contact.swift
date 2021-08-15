@@ -10,6 +10,7 @@ import Foundation
 struct Contact: Identifiable{
     var name: String
     var job: String
+    var phone: String
     var rating: Double = 0.0
     var id = UUID()
     

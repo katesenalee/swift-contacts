@@ -8,7 +8,8 @@
 import Foundation
 
 struct Contact: Identifiable{
-    var name: String
+    var firstName: String
+    var lastName: String
     var job: String
     var phone: String
     var rating: Double = 0.0

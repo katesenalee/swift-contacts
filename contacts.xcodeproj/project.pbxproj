@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A690450726BFBC2C00DE016E /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690450626BFBC2C00DE016E /* ContactDetailView.swift */; };
+		A6CFA69E26D23B9100B6D384 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFA69D26D23B9100B6D384 /* NewContactView.swift */; };
 		A6F6805A26B678A8004ABFFB /* contactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6805926B678A8004ABFFB /* contactsApp.swift */; };
 		A6F6805C26B678A8004ABFFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6805B26B678A8004ABFFB /* ContentView.swift */; };
 		A6F6805E26B678AC004ABFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F6805D26B678AC004ABFFB /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		A690450626BFBC2C00DE016E /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		A6CFA69D26D23B9100B6D384 /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		A6F6805626B678A8004ABFFB /* contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F6805926B678A8004ABFFB /* contactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsApp.swift; sourceTree = "<group>"; };
 		A6F6805B26B678A8004ABFFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		A6F6804D26B678A8004ABFFB = {
 			isa = PBXGroup;
 			children = (
+				A6CFA69D26D23B9100B6D384 /* NewContactView.swift */,
 				A690450626BFBC2C00DE016E /* ContactDetailView.swift */,
 				A6F6808426B685BB004ABFFB /* Contact.swift */,
 				A6F6805826B678A8004ABFFB /* contacts */,
@@ -267,6 +270,7 @@
 			files = (
 				A690450726BFBC2C00DE016E /* ContactDetailView.swift in Sources */,
 				A6F6808526B685BC004ABFFB /* Contact.swift in Sources */,
+				A6CFA69E26D23B9100B6D384 /* NewContactView.swift in Sources */,
 				A6F6805C26B678A8004ABFFB /* ContentView.swift in Sources */,
 				A6F6805A26B678A8004ABFFB /* contactsApp.swift in Sources */,
 			);

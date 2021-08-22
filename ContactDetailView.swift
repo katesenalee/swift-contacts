@@ -13,15 +13,20 @@ struct ContactDetailView: View {
 
     var body: some View {
         VStack {
-            Image(contact.name)
+            Image("\(contact.firstName) \(contact.lastName)")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 125, height: 125)
                 .mask(Circle())
                 .padding(.top, 5)
-            Text(contact.name)
-                .font(.largeTitle)
-                .fontWeight(.medium)
+            HStack {
+                Text(contact.firstName)
+                    .font(.largeTitle)
+                    .fontWeight(.medium)
+                Text(contact.lastName)
+                    .font(.largeTitle)
+                    .fontWeight(.medium)
+            }
             Text(contact.job)
                 .font(.title3)
                 .fontWeight(.regular)
@@ -43,6 +48,6 @@ struct ContactDetailView: View {
 
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView(contact: .constant(Contact(name: "holy zuck", job: "god", phone: "+1 (000) 000-0000")))
+        ContactDetailView(contact: .constant(Contact(firstName: "holy", lastName: "zuck", job: "god", phone: "+1 (000) 000-0000")))
     }
 }

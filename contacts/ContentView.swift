@@ -1,9 +1,7 @@
-//
 //  ContentView.swift
 //  contacts
 //
 //  Created by Sena Lee on 8/1/21.
-//
 
 import SwiftUI
 
@@ -19,19 +17,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List (contacts) { contact in
-                let index = contacts.firstIndex {
-                    $0.name == contact.name
-                }!
-                NavigationLink (destination: ContactDetailView(contact: $contacts[index])) {
-                    VStack(alignment: .leading){
-                        Text(contact.name)
-                            .font(.headline)
-                        Text(contact.job)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
+            List {
+                ForEach (contacts) { contact in
+                    let index = contacts.firstIndex {
+                        $0.id == contact.id
+                    }!
+                    NavigationLink (destination: ContactDetailView(contact: $contacts[index])) {
+                        VStack(alignment: .leading){
+                            Text(contact.name)
+                                .font(.headline)
+                            Text(contact.job)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    contacts.remove(atOffsets: indexSet)
+                })
             }
             .navigationTitle("Contacts")
         }

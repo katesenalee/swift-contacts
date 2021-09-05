@@ -7,13 +7,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var contacts = [
-        Contact(firstName: "holy", lastName: "zuck", job: "god", phone: "+1 (000) 000-0000"),
-        Contact(firstName: "elon", lastName: "musk", job: "idk", phone: "+1 (000) 000-0000"),
-        Contact(firstName: "vladmir", lastName: "putin", job: "russian", phone: "+1 (000) 000-0000"),
-        Contact(firstName: "ed", lastName: "sheeran", job: "girl you know i want ur love", phone: "+1 (000) 000-0000"),
-        Contact(firstName: "grass", lastName: "toucher", job: "toucher of grass", phone: "+1 (000) 000-0000")
-    ]
+    @Binding var contacts: [Contact]
     @State var isSheetShown = false;
     
     var body: some View {
@@ -62,6 +56,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(contacts: .constant([]))
     }
 }

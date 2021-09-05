@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contact: Identifiable{
+struct Contact: Identifiable, Codable{
     var firstName: String
     var lastName: String
     var job: String

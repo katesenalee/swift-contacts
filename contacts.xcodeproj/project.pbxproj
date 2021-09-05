@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A631F97026E4AA350023B1AE /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631F96F26E4AA350023B1AE /* ContactManager.swift */; };
 		A690450726BFBC2C00DE016E /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690450626BFBC2C00DE016E /* ContactDetailView.swift */; };
 		A6CFA69E26D23B9100B6D384 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFA69D26D23B9100B6D384 /* NewContactView.swift */; };
 		A6F6805A26B678A8004ABFFB /* contactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F6805926B678A8004ABFFB /* contactsApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A631F96F26E4AA350023B1AE /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 		A690450626BFBC2C00DE016E /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		A6CFA69D26D23B9100B6D384 /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		A6F6805626B678A8004ABFFB /* contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 		A6F6804D26B678A8004ABFFB = {
 			isa = PBXGroup;
 			children = (
+				A631F96F26E4AA350023B1AE /* ContactManager.swift */,
 				A6CFA69D26D23B9100B6D384 /* NewContactView.swift */,
 				A690450626BFBC2C00DE016E /* ContactDetailView.swift */,
 				A6F6808426B685BB004ABFFB /* Contact.swift */,
@@ -272,6 +275,7 @@
 				A6F6808526B685BC004ABFFB /* Contact.swift in Sources */,
 				A6CFA69E26D23B9100B6D384 /* NewContactView.swift in Sources */,
 				A6F6805C26B678A8004ABFFB /* ContentView.swift in Sources */,
+				A631F97026E4AA350023B1AE /* ContactManager.swift in Sources */,
 				A6F6805A26B678A8004ABFFB /* contactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

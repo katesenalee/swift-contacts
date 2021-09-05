@@ -14,6 +14,7 @@ struct ContentView: View {
         Contact(firstName: "ed", lastName: "sheeran", job: "girl you know i want ur love", phone: "+1 (000) 000-0000"),
         Contact(firstName: "grass", lastName: "toucher", job: "toucher of grass", phone: "+1 (000) 000-0000")
     ]
+    @State var isSheetShown = false;
     
     var body: some View {
         NavigationView {
@@ -46,8 +47,16 @@ struct ContentView: View {
                 })
             }
             .navigationTitle("Contacts")
-            .navigationBarItems(leading: EditButton())
+            .navigationBarItems(leading: EditButton(),
+                                trailing: Button(action: {
+                                    isSheetShown = true
+                                }, label: {
+                                    Image(systemName: "plus")
+                                }))
         }
+        .sheet(isPresented: $isSheetShown, content: {
+            NewContactView(contacts: $contacts)
+        })
     }
 }
 
